@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07111f" />
+    <meta
+      name="description"
+      content="IDVault is a privacy-first identity document manager for Apple platforms. Scan passports and ID cards, read NFC chips, and keep sensitive details encrypted."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://idvault.app/" />
+    <meta property="og:title" content="IDVault — Your identity, securely at hand" />
+    <meta
+      property="og:description"
+      content="Scan, protect, and use your identity documents across Apple platforms."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IDVault — Your identity, securely at hand" />
+    <meta
+      name="twitter:description"
+      content="Scan, protect, and use your identity documents across Apple platforms."
+    />
+    <link rel="canonical" href="https://idvault.app/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>IDVault — Your identity, securely at hand</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="IDVault home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><i></i><b></b><em></em>
+        </span>
+        <span>IDVault</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        aria-label="Open menu"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="#scan">Scan</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#everywhere">Everywhere</a>
+        <a class="nav-cta" href="#availability">Stay informed</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Privacy-first by design</p>
+          <h1>Your identity.<br /><strong>Securely at hand.</strong></h1>
+          <p class="hero-intro">
+            Scan passports and ID cards in seconds. Keep every sensitive detail encrypted,
+            synced, and ready when you need it.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#scan">
+              Explore IDVault
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
+            </a>
+            <a class="text-link" href="#privacy">
+              See how privacy works
+              <span aria-hidden="true">↘</span>
+            </a>
+          </div>
+          <div class="platform-line" aria-label="Designed for Apple platforms">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.68 13.67c.02 2.48 2.18 3.31 2.2 3.32-.02.06-.34 1.16-1.13 2.3-.68.99-1.39 1.98-2.51 2-1.1.02-1.45-.65-2.71-.65-1.26 0-1.65.63-2.69.67-1.08.04-1.9-1.08-2.59-2.07-1.41-2.04-2.49-5.76-1.04-8.28.72-1.25 2.01-2.04 3.41-2.06 1.06-.02 2.07.72 2.71.72.64 0 1.85-.89 3.12-.76.53.02 2.03.21 2.99 1.62-.08.05-1.79 1.04-1.76 3.19ZM14.62 7.52c.57-.69.96-1.66.85-2.62-.82.03-1.82.55-2.41 1.24-.53.61-.99 1.59-.87 2.53.92.07 1.85-.47 2.43-1.15Z" /></svg>
+            <span>Built for iPhone, iPad, Mac, Apple Watch, and Apple Vision Pro</span>
+          </div>
+        </div>
+
+        <div class="hero-product reveal" aria-label="IDVault app preview">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ◒ ▰</span></div>
+              <div class="app-heading">
+                <div>
+                  <span class="app-overline">Good morning</span>
+                  <h2>Documents</h2>
+                </div>
+                <button type="button" aria-label="Add a document">+</button>
+              </div>
+              <div class="identity-card card-blue">
+                <div class="card-topline">
+                  <span class="card-type">PASSPORT</span>
+                  <span class="chip-symbol" aria-hidden="true"></span>
+                </div>
+                <div class="card-person">
+                  <div class="portrait-placeholder" aria-hidden="true"><span></span></div>
+                  <div>
+                    <small>DOCUMENT HOLDER</small>
+                    <strong>Personal document</strong>
+                    <span>•••• •••• 4821</span>
+                  </div>
+                </div>
+                <div class="card-footer"><span>Encrypted</span><span>Expires in 2 years</span></div>
+              </div>
+              <div class="identity-card card-dark">
+                <div class="card-topline"><span class="card-type">IDENTITY CARD</span><span>•••</span></div>
+                <div class="card-person compact">
+                  <div class="portrait-placeholder" aria-hidden="true"><span></span></div>
+                  <div><small>DOCUMENT HOLDER</small><strong>Personal document</strong></div>
+                </div>
+              </div>
+              <div class="secure-strip">
+                <span class="mini-lock" aria-hidden="true"></span>
+                <div><strong>Protected locally</strong><small>AES-GCM encryption</small></div>
+                <span aria-hidden="true">›</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-badge badge-encrypted">
+            <span class="badge-icon lock-icon" aria-hidden="true"></span>
+            <div><strong>Encrypted</strong><small>On this device</small></div>
+          </div>
+          <div class="floating-badge badge-nfc">
+            <span class="badge-icon nfc-icon" aria-hidden="true">)))</span>
+            <div><strong>NFC verified</strong><small>Chip data read</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar" aria-label="Core protections">
+        <div><span class="trust-icon lock-icon" aria-hidden="true"></span><strong>AES-GCM encrypted</strong></div>
+        <div><span class="trust-icon face-icon" aria-hidden="true"></span><strong>Device authentication</strong></div>
+        <div><span class="trust-icon cloud-icon" aria-hidden="true"></span><strong>Private iCloud sync</strong></div>
+      </section>
+
+      <section class="section scan-section" id="scan">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Capture once</p>
+          <h2>From pocket to vault<br />in a few moments.</h2>
+          <p>
+            Point your camera at the machine-readable zone. IDVault extracts the document
+            details, then can read the embedded NFC chip for richer, verified information.
+          </p>
+        </div>
+
+        <div class="scan-grid">
+          <article class="feature-panel camera-panel reveal">
+            <div class="panel-copy">
+              <span class="step">01</span>
+              <h3>Scan the document</h3>
+              <p>Fast MRZ recognition captures the details without manual typing.</p>
+            </div>
+            <div class="scan-view" aria-hidden="true">
+              <span class="corner top-left"></span><span class="corner top-right"></span>
+              <span class="corner bottom-left"></span><span class="corner bottom-right"></span>
+              <div class="passport-page">
+                <div class="passport-photo"><span></span></div>
+                <div class="passport-lines"><i></i><i></i><i></i><i></i></div>
+                <div class="mrz-lines">P&lt;UTO•••••••••••••••••••••••<br />L898902C36UTO7408122F1204159</div>
+              </div>
+              <div class="scan-line"></div>
+              <div class="scan-pill"><span></span> Reading document</div>
+            </div>
+          </article>
+
+          <article class="feature-panel nfc-panel reveal">
+            <div class="panel-copy">
+              <span class="step">02</span>
+              <h3>Read the secure chip</h3>
+              <p>Hold your iPhone near a compatible passport to read its NFC data.</p>
+            </div>
+            <div class="nfc-visual" aria-hidden="true">
+              <div class="nfc-rings"><span></span><span></span><span></span></div>
+              <div class="passport-book">
+                <small>PASSPORT</small>
+                <div class="passport-emblem">✦</div>
+                <span class="chip-symbol"></span>
+              </div>
+              <div class="nfc-complete"><span>✓</span> Chip read securely</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="privacy-section" id="privacy">
+        <div class="privacy-visual reveal" aria-hidden="true">
+          <div class="vault-rings ring-a"></div><div class="vault-rings ring-b"></div><div class="vault-rings ring-c"></div>
+          <div class="vault-core">
+            <span class="core-shackle"></span>
+            <span class="core-body"><i></i></span>
+          </div>
+          <span class="data-chip chip-a">Name</span>
+          <span class="data-chip chip-b">Photo</span>
+          <span class="data-chip chip-c">Document no.</span>
+          <span class="data-chip chip-d">Birth date</span>
+        </div>
+        <div class="privacy-copy reveal">
+          <p class="eyebrow light"><span></span> Privacy first</p>
+          <h2>Your documents are<br />not anyone else's data.</h2>
+          <p class="privacy-lead">
+            Sensitive fields are encrypted before they are stored. Encryption keys stay in
+            the system Keychain, protected by the security built into your Apple devices.
+          </p>
+          <ul class="privacy-list">
+            <li><span>01</span><div><strong>Encrypted at rest</strong><p>Document details are protected using authenticated AES-GCM encryption.</p></div></li>
+            <li><span>02</span><div><strong>You approve access</strong><p>Device authentication and explicit confirmation guard sensitive disclosure.</p></div></li>
+            <li><span>03</span><div><strong>Built for minimum access</strong><p>Only the document fields needed for a task should be requested and used.</p></div></li>
+          </ul>
+          <a class="button button-light" href="https://romanmazeev.com/IDVault/privacy-policy/">Read the privacy policy <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section everywhere-section" id="everywhere">
+        <div class="everywhere-heading reveal">
+          <p class="eyebrow"><span></span> In your ecosystem</p>
+          <h2>One vault.<br />Every Apple device.</h2>
+          <p>
+            Keep document access in step across your devices with iCloud, and stay ahead of
+            expiry dates with timely reminders.
+          </p>
+        </div>
+        <div class="device-stage reveal" aria-hidden="true">
+          <div class="device-glow"></div>
+          <div class="device laptop">
+            <div class="laptop-screen">
+              <div class="mac-sidebar"><span></span><i></i><i></i><i></i></div>
+              <div class="mac-content">
+                <small>DOCUMENTS</small><strong>Your vault</strong>
+                <div class="mac-card one"></div><div class="mac-card two"></div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+          <div class="device tablet"><div class="tablet-screen"><span>IDVault</span><div></div><div></div></div></div>
+          <div class="device watch"><div class="watch-face"><img src="./assets/idvault-icon.png" alt="" /></div></div>
+          <div class="sync-badge"><span class="cloud-icon"></span> Synced securely</div>
+        </div>
+      </section>
+
+      <section class="smart-section">
+        <div class="smart-inner reveal">
+          <div class="smart-copy">
+            <p class="eyebrow light"><span></span> Useful when needed</p>
+            <h2>Put your documents<br />to work—on your terms.</h2>
+            <p>
+              Find documents with system search and use supported local assistants for concrete
+              tasks. IDVault asks before protected details leave the vault.
+            </p>
+          </div>
+          <div class="permission-card">
+            <div class="permission-top">
+              <img src="./assets/idvault-icon.png" alt="IDVault icon" />
+              <div><strong>IDVault</strong><small>Requests secure access</small></div>
+            </div>
+            <p>Allow access to the minimum passport details needed for this task?</p>
+            <div class="field-tags"><span>Full name</span><span>Passport number</span><span>Expiry date</span></div>
+            <div class="permission-actions"><span>Don't allow</span><strong>Approve once</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" id="availability">
+        <img class="closing-icon" src="./assets/idvault-icon.png" alt="IDVault app icon" />
+        <p class="eyebrow centered"><span></span> Identity, protected</p>
+        <h2>Carry less.<br /><strong>Keep more secure.</strong></h2>
+        <p>IDVault is designed for the next generation of Apple platforms.</p>
+        <a class="button button-primary" href="mailto:hello@idvault.app?subject=IDVault%20updates">Get IDVault updates <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"><span></span><i></i><b></b><em></em></span>
+        <span>IDVault</span>
+      </a>
+      <p>Privacy-first identity document manager for Apple platforms.</p>
+      <div class="footer-links">
+        <a href="https://romanmazeev.com/IDVault/privacy-policy/">Privacy</a>
+        <a href="mailto:hello@idvault.app">Contact</a>
+        <span>© <span data-year></span> IDVault</span>
+      </div>
+    </footer>
+  </body>
+</html>
