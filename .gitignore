@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Node tooling (if added later)
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+
+# Static-site build caches
+.jekyll-cache/
+.sass-cache/
+_site/
+
+# Local Codex/Sites runtime metadata
+.sites-runtime/
