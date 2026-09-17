@@ -1,166 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="IDVault is a private identity document manager for Apple platforms. Scan passports and ID cards, read NFC chips, and keep sensitive details encrypted." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://idvault.app/" />
-    <meta property="og:title" content="IDVault — Your identity, private by design" />
-    <meta property="og:description" content="Scan, protect, and use your identity documents across Apple platforms." />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="IDVault — Your identity, private by design" />
-    <meta name="twitter:description" content="Scan, protect, and use your identity documents across Apple platforms." />
-    <link rel="canonical" href="https://idvault.app/" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>IDVault — Your identity, private by design</title>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="#top" aria-label="IDVault home">
-          <img src="./assets/idvault-icon.png" alt="" />
-          <span>IDVault</span>
-        </a>
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="#features">Features</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#ecosystem">Ecosystem</a>
-        </nav>
-        <a class="header-link" href="mailto:hello@idvault.app?subject=IDVault%20updates">Get updates</a>
-      </div>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <img class="app-icon" src="./assets/idvault-icon.png" alt="IDVault app icon" />
-          <p class="kicker">IDVault for Apple platforms</p>
-          <h1>Your identity.<br /><span>Private by design.</span></h1>
-          <p class="hero-intro">
-            Scan identity documents, keep sensitive details encrypted, and use the
-            information you need—only when you choose.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#features">Explore IDVault</a>
-            <a class="button button-secondary" href="./privacy-policy/">Privacy Policy</a>
-          </div>
-        </div>
-
-        <div class="product-window" aria-label="IDVault document interface preview">
-          <div class="window-bar" aria-hidden="true">
-            <span></span><span></span><span></span>
-            <strong>IDVault</strong>
-          </div>
-          <div class="window-content">
-            <aside class="preview-sidebar" aria-hidden="true">
-              <div class="preview-brand"><img src="./assets/idvault-icon.png" alt="" /><span>IDVault</span></div>
-              <span class="sidebar-item active">Documents</span>
-              <span class="sidebar-item">Settings</span>
-            </aside>
-            <div class="preview-main">
-              <div class="preview-heading"><div><small>MY VAULT</small><h2>Documents</h2></div><span class="add-button">+</span></div>
-              <div class="document-grid">
-                <article class="document-card featured">
-                  <div class="document-top"><span>PASSPORT</span><i></i></div>
-                  <div class="document-person"><b></b><div><small>DOCUMENT HOLDER</small><strong>Personal document</strong><span>•••• •••• 4821</span></div></div>
-                  <footer><span>Encrypted</span><span>Expires in 2 years</span></footer>
-                </article>
-                <article class="document-card">
-                  <div class="document-top"><span>IDENTITY CARD</span><i></i></div>
-                  <div class="document-person"><b></b><div><small>DOCUMENT HOLDER</small><strong>Personal document</strong><span>•••• •••• 7315</span></div></div>
-                  <footer><span>Encrypted</span><span>Up to date</span></footer>
-                </article>
-              </div>
-              <div class="security-note"><span>✓</span><div><strong>Protected on this device</strong><small>AES-GCM encryption · Keychain protected</small></div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="proof" aria-label="Core protections">
-        <p>Private at every step.</p>
-        <div><span>On-device scanning</span><span>AES-GCM encryption</span><span>Private iCloud sync</span></div>
-      </section>
-
-      <section class="section" id="features">
-        <header class="section-heading">
-          <p class="kicker">Simple from the start</p>
-          <h2>Add a document in moments.</h2>
-          <p>Capture the machine-readable zone, read the secure chip when available, and let IDVault organize the details.</p>
-        </header>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-number">01</span>
-            <div class="feature-symbol scan-symbol" aria-hidden="true"><i></i></div>
-            <h3>Scan</h3>
-            <p>Fast MRZ recognition captures supported passports, identity cards, visas, and driver’s licenses without manual typing.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">02</span>
-            <div class="feature-symbol nfc-symbol" aria-hidden="true"><i></i><i></i><i></i></div>
-            <h3>Verify</h3>
-            <p>On compatible iPhones, hold the device near a supported document to read the embedded NFC chip.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">03</span>
-            <div class="feature-symbol lock-symbol" aria-hidden="true"><i></i></div>
-            <h3>Protect</h3>
-            <p>Sensitive document fields and images are encrypted before storage. Keys remain protected in Apple’s Keychain.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="privacy-section" id="privacy">
-        <div class="privacy-inner">
-          <div>
-            <p class="kicker">Privacy</p>
-            <h2>Your documents are not anyone else’s data.</h2>
-          </div>
-          <div class="privacy-copy">
-            <p>IDVault has no advertising SDKs, third-party analytics, or tracking tools. Document processing happens on your devices. If you enable iCloud sync, sensitive document data is encrypted before it is transmitted to and stored in your private iCloud account. Protected fields are shared only when you initiate or approve the disclosure.</p>
-            <ul>
-              <li><strong>Encrypted at rest</strong><span>Document data is protected using authenticated AES-GCM encryption.</span></li>
-              <li><strong>Access stays intentional</strong><span>Protected disclosures require authentication and can include a field-by-field review.</span></li>
-              <li><strong>No permanent assistant access</strong><span>Approved requests are one-time responses, not an open connection to your vault.</span></li>
-            </ul>
-            <a class="text-link" href="./privacy-policy/">Read the Privacy Policy <span>↗</span></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section ecosystem" id="ecosystem">
-        <header class="section-heading">
-          <p class="kicker">Made for your ecosystem</p>
-          <h2>At home on every Apple device.</h2>
-          <p>Keep your vault in step with iCloud, find documents with system search, and stay ahead of expiry dates.</p>
-        </header>
-        <div class="ecosystem-grid">
-          <article><span>iCloud</span><h3>In sync, privately.</h3><p>Encrypted records and selected settings can stay available across your supported devices.</p></article>
-          <article><span>System intelligence</span><h3>Useful when you ask.</h3><p>Use Spotlight, Siri, Shortcuts, and supported assistants while keeping protected access explicit.</p></article>
-          <article><span>Reminders</span><h3>Ready before expiry.</h3><p>Local notifications help you keep track of approaching document expiry dates.</p></article>
-          <article class="platform-card"><img src="./assets/idvault-icon.png" alt="" /><div><span>Designed for</span><h3>iPhone, iPad, Mac, Apple Watch, and Apple Vision Pro.</h3></div></article>
-        </div>
-      </section>
-
-      <section class="closing" id="availability">
-        <img src="./assets/idvault-icon.png" alt="IDVault app icon" />
-        <h2>Carry less.<br />Keep more secure.</h2>
-        <p>IDVault is built for the next generation of Apple platforms.</p>
-        <a class="button button-primary" href="mailto:hello@idvault.app?subject=IDVault%20updates">Get IDVault updates</a>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="brand" href="#top"><img src="./assets/idvault-icon.png" alt="" /><span>IDVault</span></a>
-      <p>Privacy-first identity document manager.</p>
-      <div><a href="./support/">Support</a><a href="./privacy-policy/">Privacy</a><a href="mailto:hello@idvault.app">Contact</a><span>© 2026 IDVault</span></div>
-    </footer>
-  </body>
-</html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
+<title>IDVault — Everything important. Always with you.</title>
+<meta name="description" content="Keep passports, IDs, and your family’s document details organized. Scan, copy, and securely use them across your Apple devices with IDVault.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://idvault.app/">
+<meta property="og:title" content="IDVault — Everything important. Always with you.">
+<meta property="og:description" content="A little less admin. A lot more peace of mind. Your family’s document details, safely organized across your Apple devices.">
+<meta property="og:image" content="https://idvault.app/assets/idvault-icon.png"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://idvault.app/"><link rel="icon" href="./favicon.ico">
+<link rel="stylesheet" href="./apple.css"><script src="./script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="#top" aria-label="IDVault home">IDVault</a>
+<nav aria-label="Main navigation"><a href="#features">Overview</a><a href="#privacy">Privacy</a><a href="./support/">Support</a></nav>
+<a class="button small" href="https://apps.apple.com/app/id6744865269">Download</a>
+</div></header>
+<main id="main">
+<section class="hero" id="top">
+<div class="hero-copy"><h1>Everything important.<br>Always with you.</h1>
+<p>Your family’s documents.<br class="mobile-break"> Beautifully organized. Privately yours.</p>
+<a class="button" href="https://apps.apple.com/app/id6744865269">Get IDVault</a></div>
+<div class="hero-product"><img class="hero-mac" src="./assets/mac.png" width="1800" height="1104" fetchpriority="high" alt="IDVault on Mac with family documents and saved passport details"><div class="phone hero-phone"><img src="./assets/documents.jpg" width="460" height="1000" fetchpriority="high" alt="IDVault on iPhone showing documents grouped by family member"></div></div>
+<p class="device-line">iPhone. iPad. Mac. Apple Watch. Apple Vision Pro.</p>
+</section>
+<section class="highlights" id="features"><div class="wrap">
+<div class="section-heading"><h2>A little less paperwork.<br>A lot more possibility.</h2><p>Scan a supported document with your camera.<br>Let IDVault take care of the details.</p></div>
+<div class="highlight-grid">
+<article class="highlight"><div class="card-art family-art"><div class="phone"><img src="./assets/documents.jpg" width="460" height="1000" loading="lazy" alt="Passports and identity cards organized by person"></div></div><div class="card-copy"><h3>Keep what matters together.</h3><p>Passports, IDs, and visas. A separate profile for everyone in your family.</p></div></article>
+<article class="highlight"><div class="card-art detail-art"><img src="./assets/passport.jpg" width="460" height="1000" loading="lazy" alt="Saved passport fields, including document number and issuing country"></div><div class="card-copy"><h3>Copy details in seconds.</h3><p>A document number. A date of birth. Copy the field you need and move on.</p></div></article>
+<article class="highlight"><div class="card-art reminder-art"><div class="notification"><img src="./assets/notification.png" width="644" height="130" loading="lazy" alt="IDVault expiry notification for a saved visa"></div><svg class="calendar" viewBox="0 0 100 100" aria-hidden="true"><rect x="17" y="23" width="66" height="63" rx="13"/><path d="M17 43h66M34 15v17m32-17v17m-32 32 12 12 23-25"/></svg></div><div class="card-copy"><h3>Stay ahead of important dates.</h3><p>Get a heads-up before documents expire. Leave time for the next renewal.</p></div></article>
+</div><p class="feature-footnote">Camera scanning requires a supported machine-readable zone (MRZ). Read available chip details and photos on a compatible NFC-enabled iPhone.</p>
+</div></section>
+<section class="assistants wrap" id="assistants"><div class="assistant-product"><img src="./assets/mac.png" width="1800" height="1104" loading="lazy" alt="Saved passport information in the IDVault Mac app"></div><div class="assistant-copy"><h2>A helping hand.<br>On your terms.</h2><p>Prepare an application. Check a form. Connect ChatGPT or Claude on your Mac and share only the document fields a task needs.</p><p>Every request requires device authentication. Keep the optional review on to check what’s shared. One request never means ongoing access.</p><div class="assistant-names"><span>ChatGPT</span><span>Claude</span></div><p class="caption">Also works with Siri, Shortcuts, and compatible Apple Intelligence actions. Shared details are processed under the receiving assistant’s privacy policy and settings.</p></div></section>
+<section class="privacy" id="privacy"><div class="wrap"><svg class="lock" viewBox="0 0 64 72" aria-hidden="true"><rect x="10" y="29" width="44" height="35" rx="9"/><path d="M20 29V18a12 12 0 0 1 24 0v11M32 43v8"/></svg><h2>Your identity.<br><span>Yours alone.</span></h2><div class="privacy-facts"><article><h3>Encrypted before storage.</h3><p>Sensitive document details and photos are encrypted before they’re stored.</p></article><article><h3>No ads. No analytics.</h3><p>No advertising or analytics tracking how you use IDVault.</p></article><article><h3>No IDVault account.</h3><p>Your documents stay available across your devices through your iCloud account.</p></article></div><a class="text-link" href="./privacy-policy/">Explore our privacy policy <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></div></section>
+<section class="closing"><img src="./assets/idvault-icon.png" width="82" height="64" loading="lazy" alt="IDVault app icon"><h2>Go prepared.</h2><p>A more organized, private way to keep life moving.</p><a class="button" href="https://apps.apple.com/app/id6744865269">Download IDVault</a><p class="caption">For your Apple devices. Requires OS version 26 or later.</p></section>
+</main>
+<footer class="site-footer"><div class="footer-inner"><a class="brand" href="#top">IDVault</a><p>© <span data-year>2026</span> IDVault. All rights reserved.</p><div><a href="./privacy-policy/">Privacy Policy</a><a href="./support/">Support</a><a href="mailto:idvault@romanmazeev.com">Contact</a></div></div></footer>
+</body></html>
