@@ -9,7 +9,7 @@
   --tertiary:#69788a;
   --line:#dce3ed;
   --line-soft:#e9edf4;
-  --blue:#3e63c8;
+  --blue:#0071e3;
   --page:min(1200px,calc(100% - 96px));
   font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
   font-synthesis:none
@@ -60,7 +60,7 @@ em {
   margin-inline:auto
 }
 :focus-visible {
-  outline:3px solid #3e63c8;
+  outline:3px solid var(--blue);
   outline-offset:5px
 }
 svg {
@@ -188,7 +188,7 @@ svg {
   content:"";
   height:7px;
   width:7px;
-  background:#6b89d9;
+  background:var(--blue);
   border-radius:50%
 }
 .features {
@@ -983,5 +983,5 @@ h3 {
     --blue: #2997ff;
     --header: #161617e6;
   }
-  :focus-visible { outline-color: #2997ff; }
+  :focus-visible { outline-color: var(--blue); }
 }

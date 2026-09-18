@@ -3,7 +3,7 @@
   color-scheme: light dark;
   --ink: #1d1d1f;
   --muted: #6e6e73;
-  --blue: #0071e3;
+  --blue: var(--accent);
   --canvas: #f5f5f7;
   --background: #fff;
   --card: #fff;
@@ -28,7 +28,7 @@ h1, h2, h3 { font-weight: 600; }
 h1, h2 { letter-spacing: -.045em; }
 p { line-height: 1.5; }
 .wrap { width: var(--page); margin-inline: auto; }
-:focus-visible { outline: 3px solid #0071e3; outline-offset: 5px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
 .hero { text-align: center; overflow: clip; padding-top: 70px; padding-bottom: 45px; }
 .hero-copy { width: var(--page); margin: auto; }
 .hero h1 { font-size: clamp(48px, 5.4vw, 78px); line-height: 1.04; }
@@ -77,7 +77,7 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 .privacy-facts article + article { border-left: 1px solid #424245; padding-left: 35px; }
 .privacy-facts h3 { font-size: 21px; letter-spacing: -.025em; line-height: 1.25; margin-bottom: 12px; }
 .privacy-facts p { font-size: 15px; color: #a1a1a6; }
-.text-link { display: inline-flex; gap: 5px; align-items: center; color: #2997ff; font-size: 17px; }
+.text-link { display: inline-flex; gap: 5px; align-items: center; color: var(--accent); font-size: 17px; }
 .text-link svg { width: 17px; height: 17px; }
 .text-link:hover { text-decoration: underline; }
 .closing { padding: 90px 20px; text-align: center; }
