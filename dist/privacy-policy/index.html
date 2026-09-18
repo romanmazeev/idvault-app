@@ -26,22 +26,29 @@
     />
     <link rel="canonical" href="https://idvault.app/privacy-policy/" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../common.css">
+
     <title>Privacy Policy — IDVault</title>
   </head>
   <body class="policy-page">
-    <a class="skip-link" href="#policy-content">Skip to policy</a>
-
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="../" aria-label="IDVault home">
-          <img src="../assets/idvault-icon.png" width="30" height="24" alt="" />
-          <span>IDVault</span>
-        </a>
-        <nav aria-label="Main navigation"><a href="../#features">Overview</a><a href="./" aria-current="page">Privacy</a><a href="../support/">Support</a></nav>
-        <a class="button button-small" href="https://apps.apple.com/app/id6744865269">Download</a>
-      </div>
-    </header>
+    <!-- site:header -->
+<a class="skip-link" href="#policy-content">Skip to policy</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../#top" aria-label="IDVault home">
+      <img src="../assets/idvault-icon.png" width="30" height="24" alt="">
+      <span>IDVault</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="../#features">Overview</a>
+      <a href="../#privacy" aria-current="page">Privacy</a>
+      <a href="../support/">Support</a>
+    </nav>
+    <a class="button small" href="https://apps.apple.com/app/id6744865269">Download</a>
+  </div>
+</header>
+<!-- /site:header -->
 
     <main id="policy-content" class="policy-main">
       <header class="policy-title">
@@ -248,12 +255,25 @@
               If you have a privacy question or need help understanding how to delete IDVault
               data, contact:
             </p>
-            <a href="mailto:idvault@romanmazeev.com">idvault@romanmazeev.com <span aria-hidden="true">↗</span></a>
+            <a href="mailto:idvault@romanmazeev.com"><!-- site:policy-email -->idvault@romanmazeev.com<!-- /site:policy-email --> <span aria-hidden="true">↗</span></a>
           </section>
         </article>
       </div>
     </main>
 
-    <footer class="site-footer"><div class="footer-inner"><a class="brand" href="../">IDVault</a><p>© 2026 IDVault. All rights reserved.</p><div><a href="./">Privacy Policy</a><a href="../support/">Support</a><a href="mailto:idvault@romanmazeev.com">Contact</a></div></div></footer>
+    <!-- site:footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="brand" href="../">IDVault</a>
+    <p>© <span data-year>2026</span> IDVault. All rights reserved.</p>
+    <div>
+      <a href="../privacy-policy/" aria-current="page">Privacy Policy</a>
+      <a href="../support/">Support</a>
+      <a href="mailto:idvault@romanmazeev.com">Contact</a>
+    </div>
+  </div>
+</footer>
+<!-- /site:footer -->
+
   </body>
 </html>

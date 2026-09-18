@@ -26,22 +26,29 @@
     />
     <link rel="canonical" href="https://idvault.app/support/" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../common.css">
+
     <title>Support — IDVault</title>
   </head>
   <body class="support-page">
-    <a class="skip-link" href="#support-content">Skip to support</a>
-
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="../" aria-label="IDVault home">
-          <img src="../assets/idvault-icon.png" width="30" height="24" alt="" />
-          <span>IDVault</span>
-        </a>
-        <nav aria-label="Main navigation"><a href="../#features">Overview</a><a href="../#privacy">Privacy</a><a href="./" aria-current="page">Support</a></nav>
-        <a class="button button-small" href="https://apps.apple.com/app/id6744865269">Download</a>
-      </div>
-    </header>
+    <!-- site:header -->
+<a class="skip-link" href="#support-content">Skip to support</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../#top" aria-label="IDVault home">
+      <img src="../assets/idvault-icon.png" width="30" height="24" alt="">
+      <span>IDVault</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="../#features">Overview</a>
+      <a href="../#privacy">Privacy</a>
+      <a href="../support/" aria-current="page">Support</a>
+    </nav>
+    <a class="button small" href="https://apps.apple.com/app/id6744865269">Download</a>
+  </div>
+</header>
+<!-- /site:header -->
 
     <main id="support-content" class="support-main">
       <header class="support-title">
@@ -62,7 +69,7 @@
             version. Including the IDVault app version can help us investigate faster.
           </p>
         </div>
-        <a class="button button-primary" href="mailto:idvault@romanmazeev.com?subject=IDVault%20Support">
+        <a class="button" href="mailto:idvault@romanmazeev.com?subject=IDVault%20Support">
           Email Support
         </a>
       </section>
@@ -99,6 +106,19 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div class="footer-inner"><a class="brand" href="../">IDVault</a><p>© 2026 IDVault. All rights reserved.</p><div><a href="../privacy-policy/">Privacy Policy</a><a href="./">Support</a><a href="mailto:idvault@romanmazeev.com">Contact</a></div></div></footer>
+    <!-- site:footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="brand" href="../">IDVault</a>
+    <p>© <span data-year>2026</span> IDVault. All rights reserved.</p>
+    <div>
+      <a href="../privacy-policy/">Privacy Policy</a>
+      <a href="../support/" aria-current="page">Support</a>
+      <a href="mailto:idvault@romanmazeev.com">Contact</a>
+    </div>
+  </div>
+</footer>
+<!-- /site:footer -->
+
   </body>
 </html>

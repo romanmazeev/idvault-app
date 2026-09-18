@@ -29,18 +29,6 @@ h1, h2 { letter-spacing: -.045em; }
 p { line-height: 1.5; }
 .wrap { width: var(--page); margin-inline: auto; }
 :focus-visible { outline: 3px solid #0071e3; outline-offset: 5px; }
-.skip-link { position: fixed; z-index: 100; top: 8px; left: 8px; padding: 12px 20px; background: #1d1d1f; color: white; transform: translateY(-160%); }
-.skip-link:focus { transform: none; }
-.site-header { position: sticky; z-index: 10; top: 0; background: var(--header); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--header-line); }
-.header-inner { width: var(--page); margin: auto; display: flex; align-items: center; gap: 30px; min-height: 58px; }
-.brand { display: inline-flex; align-items: center; gap: 8px; font-size: 21px; font-weight: 650; letter-spacing: -.7px; }
-.brand img { width: 30px; height: 24px; object-fit: contain; }
-.header-inner nav { margin-left: auto; display: flex; gap: 28px; font-size: 12px; color: var(--nav); }
-.header-inner nav a { padding: 16px 0; }
-.header-inner nav a:hover, .site-footer a:hover { color: var(--blue); }
-.button { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 12px 24px; border-radius: 100px; color: #fff; background: var(--blue); font-size: 15px; font-weight: 400; line-height: 1.25; transition: background .2s; }
-.button:hover { background: #0077ed; }
-.button.small { min-height: 30px; font-size: 12px; padding: 8px 16px; }
 .hero { text-align: center; overflow: clip; padding-top: 70px; padding-bottom: 45px; }
 .hero-copy { width: var(--page); margin: auto; }
 .hero h1 { font-size: clamp(48px, 5.4vw, 78px); line-height: 1.04; }
@@ -97,10 +85,6 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 .closing h2 { font-size: 56px; }
 .closing > p { color: var(--muted); font-size: 20px; margin: 17px 0 25px; }
 .closing > .caption { font-size: 12px; margin-bottom: 0; }
-.site-footer { background: var(--canvas); font-size: 12px; color: var(--muted); }
-.footer-inner { width: var(--page); margin: auto; display: flex; gap: 25px; align-items: center; padding: 30px 0; }
-.site-footer .brand { color: var(--ink); font-size: 18px; }
-.footer-inner > div { margin-left: auto; display: flex; gap: 22px; }
 @media (min-width: 1500px) { .hero { padding-top: 85px; } }
 @media (max-width: 1100px) {
   .hero-product { width: calc(100% - 20px); }
@@ -119,8 +103,6 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 }
 @media (max-width: 760px) {
   :root { --page: calc(100% - 40px); }
-  .header-inner { gap: 20px; }
-  .header-inner nav { gap: 18px; }
   .hero { padding-top: 55px; }
   .hero h1 { font-size: 48px; }
   .hero-copy > p { max-width: 450px; font-size: 19px; }
@@ -144,12 +126,8 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
   .privacy-facts article + article { padding-left: 20px; }
   .privacy-facts h3 { font-size: 18px; }
   .privacy-facts p { font-size: 14px; }
-  .footer-inner { flex-wrap: wrap; }
-  .footer-inner > div { margin-left: 0; width: 100%; }
 }
 @media (max-width: 540px) {
-  .header-inner nav { display: none; }
-  .header-inner .button { margin-left: auto; }
   .hero { padding-top: 48px; padding-bottom: 36px; }
   .hero h1 { font-size: clamp(32px, 8.8vw, 46px); letter-spacing: -.04em; }
   .mobile-break { display: initial; }
@@ -180,9 +158,6 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
   .closing { padding-block: 70px; }
   .closing h2 { font-size: 46px; }
   .closing > p { font-size: 17px; max-width: 300px; margin-inline: auto; }
-  .footer-inner { justify-content: center; text-align: center; gap: 15px; }
-  .footer-inner > p { width: 100%; }
-  .footer-inner > div { justify-content: center; }
 }
 
 /* Editorial bento layout for the product overview. */
@@ -248,7 +223,6 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
     --reminder: #24262c;
     --accent: #2997ff;
   }
-  .header-inner nav a:hover, .site-footer a:hover { color: var(--accent); }
   .phone { outline-color: #636366; box-shadow: 0 18px 35px -12px #0009; }
   .privacy { border-block: 1px solid #ffffff14; }
   .chatgpt-logo { filter: invert(1); }
