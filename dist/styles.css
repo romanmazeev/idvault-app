@@ -945,6 +945,10 @@ h3 {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .policy-contact .text-link, .support-contact .text-link { --site-blue: #0069d6; }
+}
+
 /* Shared appearance for Support and Privacy Policy. */
 @media (prefers-color-scheme: dark) {
   :root {

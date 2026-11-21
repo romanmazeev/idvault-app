@@ -93,11 +93,11 @@ for (const page of pages) {
       renderCollection('privacy-facts', privacyFactTemplate, privacyFacts),
     );
   }
-  if (page.file === 'privacy-policy/index.html') {
+  if (page.active === 'privacy' || page.active === 'support') {
     html = replaceSharedBlock(
       html,
-      'policy-email',
-      `<!-- site:policy-email -->${supportEmail}<!-- /site:policy-email -->`,
+      'contact-email',
+      `<!-- site:contact-email -->${supportEmail}<!-- /site:contact-email -->`,
     );
   }
   html = replaceSharedBlock(
