@@ -55,13 +55,12 @@
 }
 .header-inner nav a { padding: 16px 0; }
 .mobile-menu { display: none; }
-/* Use the same link states in the header, footer, and page navigation. */
-:is(.header-inner nav a, .site-footer a, .policy-nav a)[aria-current] {
+/* Use the same current-link style in site and page navigation. */
+:is(.header-inner nav a, .policy-nav a)[aria-current] {
   color: var(--site-ink);
-  font-weight: 650;
+  font-weight: 600;
 }
-a[href]:not(.app-store-badge, .skip-link):hover,
-:is(.header-inner nav a, .site-footer a, .policy-nav a)[aria-current] {
+a[href]:not(.app-store-badge, .skip-link):hover {
   text-decoration: underline;
   text-underline-offset: .3em;
 }
@@ -133,7 +132,7 @@ a[href]:not(.app-store-badge, .skip-link):hover,
     min-width: 160px;
     gap: 0;
     padding: 4px;
-    color: var(--site-ink);
+    color: var(--site-muted);
     background: var(--card, var(--surface, Canvas));
     border: 1px solid var(--site-header-border);
     border-radius: 16px;

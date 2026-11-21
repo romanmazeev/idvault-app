@@ -93,7 +93,7 @@ for (const page of pages) {
       renderCollection('privacy-facts', privacyFactTemplate, privacyFacts),
     );
   }
-  if (page.active === 'privacy' || page.active === 'support') {
+  if (page.active === 'support') {
     html = replaceSharedBlock(
       html,
       'contact-email',

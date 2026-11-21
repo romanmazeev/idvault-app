@@ -487,19 +487,6 @@ h3 {
 .policy-document strong {
   color: var(--text);
 }
-.policy-contact {
-  margin-top: 18px;
-  padding: 34px !important;
-  border: 0 !important;
-  border-radius: 24px;
-  background: var(--surface);
-}
-.policy-contact .policy-number {
-  position: static;
-  display: block;
-  margin-bottom: 1rem;
-}
-.policy-contact .text-link { margin-top: 1.2rem; }
 /* Support */
 .support-main {
   width: var(--page);
@@ -885,9 +872,6 @@ h3 {
     display:block;
     margin:8px 0
   }
-  .policy-contact {
-    padding:25px!important
-  }
   .support-contact {
     flex-direction:column;
     padding:25px;
@@ -946,7 +930,7 @@ h3 {
 }
 
 @media (prefers-color-scheme: light) {
-  .policy-contact .text-link, .support-contact .text-link { --site-blue: #0069d6; }
+  .support-contact .text-link { --site-blue: #0069d6; }
 }
 
 /* Shared appearance for Support and Privacy Policy. */
