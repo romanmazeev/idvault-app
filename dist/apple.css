@@ -82,10 +82,8 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 .privacy-facts article + article { border-left: 1px solid #424245; padding-left: 35px; }
 .privacy-facts h3 { font-size: 21px; letter-spacing: -.025em; line-height: 1.25; margin-bottom: 12px; }
 .privacy-facts p { font-size: 15px; color: #a1a1a6; }
-.text-link { display: inline-flex; gap: 5px; align-items: center; color: var(--accent); font-size: 17px; }
 .text-link svg { width: 17px; height: 17px; }
-.privacy .text-link { color: #2997ff; min-height: 44px; }
-.text-link:hover { text-decoration: underline; }
+.privacy .text-link { --site-blue: #2997ff; }
 .closing { padding: 90px 20px; text-align: center; }
 .closing img { margin: 0 auto 25px; }
 .closing h2 { font-size: 56px; }

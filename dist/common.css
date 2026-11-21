@@ -57,12 +57,15 @@
 }
 .header-inner nav a { padding: 16px 0; }
 .mobile-menu { display: none; }
-.header-inner nav a:hover,
-.header-inner nav a[aria-current="page"] { color: var(--site-ink); }
-.header-inner nav a[aria-current="page"] {
+/* Use the same link states in the header, footer, and page navigation. */
+:is(.header-inner nav a, .site-footer a, .policy-nav a)[aria-current] {
+  color: var(--site-ink);
   font-weight: 650;
+}
+a[href]:not(.button, .app-store-badge, .skip-link):hover,
+:is(.header-inner nav a, .site-footer a, .policy-nav a)[aria-current] {
   text-decoration: underline;
-  text-underline-offset: .35em;
+  text-underline-offset: .3em;
 }
 
 .button {
@@ -83,7 +86,7 @@
   transition: background .2s;
 }
 .button:hover { color: #fff; background: var(--site-blue-hover); }
-.app-store-link {
+.text-link, .app-store-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +94,7 @@
   color: var(--site-blue);
   font-weight: 500;
 }
-.app-store-link:hover { text-decoration: underline; }
+.text-link { gap: .35em; }
 .header-inner .app-store-link {
   padding-inline: 8px;
   font-size: 13px;
@@ -117,7 +120,6 @@
 .footer-inner .brand { color: var(--site-ink); font-size: 18px; }
 .footer-inner > p { margin: 0; line-height: 1.5; }
 .footer-inner > div { margin-left: auto; display: flex; gap: 22px; }
-.site-footer a:hover { color: var(--site-blue); }
 
 @media (max-width: 760px) {
   .header-inner, .footer-inner { width: calc(100% - 40px); }
