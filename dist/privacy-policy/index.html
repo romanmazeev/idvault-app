@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../common.css">
 
+    <script src="../policy.js" defer></script>
     <title>Privacy Policy — IDVault</title>
   </head>
   <body class="policy-page">
@@ -36,18 +37,35 @@
 <a class="skip-link" href="#policy-content">Skip to policy</a>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="../#top" aria-label="IDVault home">
+    <a class="brand" href="../" aria-label="IDVault home">
       <img src="../assets/idvault-icon.png" width="30" height="24" alt="">
       <span>IDVault</span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="../#features">Overview</a>
-      <a href="../#privacy" aria-current="page">Privacy</a>
+      <a href="../">Overview</a>
+      <a href="../privacy-policy/" aria-current="page">Privacy</a>
       <a href="../support/">Support</a>
     </nav>
-    <a class="button small" href="https://apps.apple.com/app/id6744865269">Download</a>
+    <a class="app-store-link" href="https://apps.apple.com/app/id6744865269" aria-label="Download on the App Store">Download</a>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="../">Overview</a>
+        <a href="../privacy-policy/" aria-current="page">Privacy</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </details>
   </div>
 </header>
+<script>
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !mobileMenu.open) return;
+
+    mobileMenu.open = false;
+    mobileMenu.querySelector('summary').focus();
+  });
+</script>
 <!-- /site:header -->
 
     <main id="policy-content" class="policy-main">
@@ -68,7 +86,7 @@
       </header>
 
       <div class="policy-layout">
-        <aside class="policy-nav" aria-label="Policy sections">
+        <nav class="policy-nav" aria-label="Policy sections">
           <span>On this page</span>
           <a href="#data-stored">Data stored</a>
           <a href="#scanning">Camera and NFC</a>
@@ -83,7 +101,7 @@
           <a href="#retention">Retention and deletion</a>
           <a href="#changes">Changes</a>
           <a href="#contact">Contact</a>
-        </aside>
+        </nav>
 
         <article class="policy-document">
           <section id="data-stored">

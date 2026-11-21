@@ -13,6 +13,7 @@ const pages = [
     home: './',
     skipTarget: '#main',
     skipLabel: 'Skip to content',
+    active: 'overview',
     styles: ['./apple.css', './common.css'],
   },
   {

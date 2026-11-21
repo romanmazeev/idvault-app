@@ -29,11 +29,16 @@ h1, h2 { letter-spacing: -.045em; }
 p { line-height: 1.5; }
 .wrap { width: var(--page); margin-inline: auto; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+/* In-page links move focus to these static sections for keyboard navigation. */
+#features:focus, #privacy:focus { outline: none; }
 .hero { text-align: center; overflow: clip; padding-top: 70px; padding-bottom: 45px; }
 .hero-copy { width: var(--page); margin: auto; }
-.hero h1 { font-size: clamp(48px, 5.4vw, 78px); line-height: 1.04; }
-.hero-copy > p { margin: 24px auto 24px; font-size: 23px; color: var(--muted); letter-spacing: -.025em; }
-.mobile-break { display: none; }
+.hero h1 { font-size: clamp(48px, 5.4vw, 78px); line-height: 1.04; text-wrap: balance; }
+.hero-copy > p { margin: 24px auto; font-size: 23px; color: var(--muted); letter-spacing: -.025em; text-wrap: balance; }
+
+.app-store-badge { display: inline-block; vertical-align: middle; border-radius: 8px; }
+.app-store-badge img { width: auto; height: 44px; }
+.hero-copy > .hero-caption { margin: 14px auto 0; font-size: 13px; letter-spacing: normal; }
 .hero-product { width: min(1280px, calc(100% - 32px)); margin: 38px auto 5px; }
 .hero-main { width: 100%; filter: drop-shadow(0 30px 34px #0000001c); }
 .phone { overflow: hidden; border: 5px solid #202124; outline: 1px solid #95979b; border-radius: 34px; background: #fff; box-shadow: 0 18px 30px -12px #00000035; }
@@ -64,7 +69,7 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 .assistant-copy h2 { font-size: 48px; }
 .assistant-copy > p { margin-top: 24px; color: var(--muted); font-size: 17px; }
 .assistant-copy > p + p { font-size: 15px; margin-top: 16px; }
-.assistant-names { display: flex; gap: 12px; margin-top: 28px; }
+.assistant-names { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .assistant-names span { display: flex; align-items: center; gap: 10px; padding: 13px 21px; border: 1px solid var(--border); border-radius: 14px; background: var(--card); font-size: 17px; }
 .assistant-names strong { font-weight: 550; }
 .assistant-logo { width: 24px; height: 24px; object-fit: contain; flex: 0 0 auto; }
@@ -79,6 +84,7 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 .privacy-facts p { font-size: 15px; color: #a1a1a6; }
 .text-link { display: inline-flex; gap: 5px; align-items: center; color: var(--accent); font-size: 17px; }
 .text-link svg { width: 17px; height: 17px; }
+.privacy .text-link { color: #2997ff; min-height: 44px; }
 .text-link:hover { text-decoration: underline; }
 .closing { padding: 90px 20px; text-align: center; }
 .closing img { margin: 0 auto 25px; }
@@ -117,7 +123,7 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
   .detail-art, .reminder-art { height: 272px; margin: 14px; }
   .detail-art img { top: 0; }
   .card-copy h3 { font-size: 22px; }
-  .assistants { grid-template-columns: 1fr; gap: 30px; padding-block: 75px; }
+  .assistants { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-block: 75px; }
   .assistant-product { margin-inline: -20px; }
   .assistant-copy { max-width: 530px; margin: auto; }
   .assistant-copy h2 { font-size: 44px; }
@@ -130,7 +136,6 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
 @media (max-width: 540px) {
   .hero { padding-top: 48px; padding-bottom: 36px; }
   .hero h1 { font-size: clamp(32px, 8.8vw, 46px); letter-spacing: -.04em; }
-  .mobile-break { display: initial; }
   .hero-copy > p { font-size: 17px; margin-block: 20px; }
   .hero-product { width: calc(100% - 8px); margin-top: 34px; }
   .device-line { font-size: 10px; margin-top: 22px; }
@@ -148,7 +153,7 @@ h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.08; }
   .feature-footnote { font-size: 11px; margin-top: 20px; }
   .assistant-product { margin-inline: -15px; }
   .assistant-copy h2 { font-size: 39px; }
-  .assistant-names span { flex: 1; text-align: center; }
+  .assistant-names span { flex: 1; justify-content: center; padding-inline: 12px; }
   .privacy h2 { font-size: 54px; }
   .privacy-facts { grid-template-columns: 1fr; margin-top: 40px; gap: 0; max-width: 330px; text-align: center; }
   .privacy-facts article { padding: 25px 0; }

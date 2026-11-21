@@ -450,12 +450,21 @@ h3 {
   letter-spacing: .06em;
 }
 .policy-nav a {
-  padding: .5rem 0;
+  padding: .5rem .75rem;
+  border-inline-start: 2px solid transparent;
   color: var(--secondary);
   font-size: .84rem;
 }
-.policy-nav a:hover {
+.policy-nav a:hover,
+.policy-nav a[aria-current="location"] {
   color: var(--blue);
+}
+.policy-nav a[aria-current="location"] {
+  border-inline-start-color: currentColor;
+  font-weight: 650;
+}
+.policy-nav a:focus-visible {
+  outline-offset: -3px;
 }
 .policy-document {
   border-top: 1px solid var(--line);
@@ -570,43 +579,43 @@ h3 {
   font-size: 1rem;
   line-height: 1.65;
 }
-.support-contact .button {
-  flex: 0 0 auto;
+.support-contact .support-email {
+  flex: 0 1 280px;
+}
+.support-email p {
+  margin: 0 0 14px;
+  color: var(--secondary);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.support-faq { margin-top: 60px; }
+.support-faq h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  letter-spacing: -.045em;
 }
 .support-grid {
   margin-top: 18px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 .support-grid article {
-  min-height: 330px;
-  padding: 34px;
+  padding: 28px;
   border: 1px solid var(--line-soft);
-  border-radius: 28px;
+  border-radius: 24px;
   background: var(--surface);
 }
-.support-grid article > span {
-  color: var(--tertiary);
-  font-size: .75rem;
-  font-weight: 600;
+.support-grid h3 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  letter-spacing: -.025em;
 }
-.support-grid h2 {
-  margin: 4.5rem 0 1rem;
-  font-size: 1.7rem;
-  letter-spacing: -.035em;
-}
-.support-grid p, .support-grid ul {
+.support-grid p {
   margin: 0;
   color: var(--secondary);
   font-size: 1rem;
   line-height: 1.65;
-}
-.support-grid ul {
-  padding-left: 1.2rem;
-}
-.support-grid li + li {
-  margin-top: .65rem;
 }
 .support-links {
   max-width: 760px;
@@ -659,6 +668,8 @@ h3 {
   }
 }
 @media(max-width:800px) {
+  .support-grid { grid-template-columns: 1fr; }
+  .support-contact .support-email { flex-basis: auto; }
   :root {
     --page:calc(100% - 40px)
   }
@@ -912,15 +923,8 @@ h3 {
     align-items:flex-start;
     margin-top:40px
   }
-  .support-grid {
-    grid-template-columns:1fr
-  }
   .support-grid article {
-    min-height:0;
     padding:25px
-  }
-  .support-grid h2 {
-    margin-top:30px
   }
   .support-links {
     margin-top:55px

@@ -33,6 +33,6 @@ export const privacyFacts = [
   },
   {
     title: 'No IDVault account.',
-    description: 'Your documents stay available across your devices through your iCloud account.',
+    description: 'Sync documents across your Apple devices when iCloud is enabled for IDVault.',
   },
 ];

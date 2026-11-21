@@ -36,18 +36,35 @@
 <a class="skip-link" href="#support-content">Skip to support</a>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="../#top" aria-label="IDVault home">
+    <a class="brand" href="../" aria-label="IDVault home">
       <img src="../assets/idvault-icon.png" width="30" height="24" alt="">
       <span>IDVault</span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="../#features">Overview</a>
-      <a href="../#privacy">Privacy</a>
+      <a href="../">Overview</a>
+      <a href="../privacy-policy/">Privacy</a>
       <a href="../support/" aria-current="page">Support</a>
     </nav>
-    <a class="button small" href="https://apps.apple.com/app/id6744865269">Download</a>
+    <a class="app-store-link" href="https://apps.apple.com/app/id6744865269" aria-label="Download on the App Store">Download</a>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="../">Overview</a>
+        <a href="../privacy-policy/">Privacy</a>
+        <a href="../support/" aria-current="page">Support</a>
+      </nav>
+    </details>
   </div>
 </header>
+<script>
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !mobileMenu.open) return;
+
+    mobileMenu.open = false;
+    mobileMenu.querySelector('summary').focus();
+  });
+</script>
 <!-- /site:header -->
 
     <main id="support-content" class="support-main">
@@ -60,6 +77,24 @@
         </p>
       </header>
 
+      <section class="support-faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Common questions</h2>
+        <div class="support-grid">
+          <article>
+            <h3>Why won’t my document scan?</h3>
+            <p>Look for the machine-readable lines (MRZ) on your document. Allow camera access for IDVault and keep all of those lines in the frame. Use even lighting and tilt the document slightly if there’s glare.</p>
+          </article>
+          <article>
+            <h3>Why isn’t the NFC chip reading?</h3>
+            <p>Use a compatible iPhone and a document with a supported chip. Hold the top of your iPhone against the document and keep it still when a read starts. If necessary, move the phone slowly to find the chip.</p>
+          </article>
+          <article>
+            <h3>Why aren’t my documents syncing?</h3>
+            <p>Check that your devices use the same Apple Account, are online, and have iCloud enabled for IDVault. After enabling it, allow time for documents to appear on your other devices.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="support-contact" aria-labelledby="contact-title">
         <div>
           <p class="support-label">Contact</p>
@@ -69,30 +104,15 @@
             version. Including the IDVault app version can help us investigate faster.
           </p>
         </div>
-        <a class="button" href="mailto:idvault@romanmazeev.com?subject=IDVault%20Support">
-          Email Support
-        </a>
-      </section>
-
-      <section class="support-grid" aria-label="Support guidance">
-        <article>
-          <span>01</span>
-          <h2>Try these steps first</h2>
-          <ul>
-            <li>Update IDVault and your device to the latest available version.</li>
-            <li>Close and reopen IDVault, then try the action again.</li>
-            <li>Review camera, NFC, notification, Photos, and iCloud access in System Settings.</li>
-          </ul>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>Protect your documents</h2>
-          <p>
-            Never email scans, document photos, MRZ data, document numbers, or other
-            identity details. We will not ask for your device passcode, Apple Account
-            password, or encryption keys.
+        <div class="support-email">
+          <p id="support-email-privacy">
+            Please leave out scans, document photos, MRZ data, and other identity details.
+            We’ll never ask for your device passcode, Apple Account password, or encryption keys.
           </p>
-        </article>
+          <a class="button" aria-describedby="support-email-privacy" href="mailto:idvault@romanmazeev.com?subject=IDVault%20Support">
+            Email Support
+          </a>
+        </div>
       </section>
 
       <section class="support-links" aria-labelledby="resources-title">

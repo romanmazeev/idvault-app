@@ -2,16 +2,33 @@
 <a class="skip-link" href="{{skipTarget}}">{{skipLabel}}</a>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="{{home}}#top" aria-label="IDVault home">
+    <a class="brand" href="{{home}}" aria-label="IDVault home">
       <img src="{{home}}assets/idvault-icon.png" width="30" height="24" alt="">
       <span>IDVault</span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="{{home}}#features"{{overviewCurrent}}>Overview</a>
-      <a href="{{home}}#privacy"{{privacyCurrent}}>Privacy</a>
+      <a href="{{home}}"{{overviewCurrent}}>Overview</a>
+      <a href="{{home}}privacy-policy/"{{privacyCurrent}}>Privacy</a>
       <a href="{{home}}support/"{{supportCurrent}}>Support</a>
     </nav>
-    <a class="button small" href="{{appStoreUrl}}">Download</a>
+    <a class="app-store-link" href="{{appStoreUrl}}" aria-label="Download on the App Store">Download</a>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="{{home}}"{{overviewCurrent}}>Overview</a>
+        <a href="{{home}}privacy-policy/"{{privacyCurrent}}>Privacy</a>
+        <a href="{{home}}support/"{{supportCurrent}}>Support</a>
+      </nav>
+    </details>
   </div>
 </header>
+<script>
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !mobileMenu.open) return;
+
+    mobileMenu.open = false;
+    mobileMenu.querySelector('summary').focus();
+  });
+</script>
 <!-- /site:header -->
