@@ -99,14 +99,12 @@ a[href]:not(.app-store-badge, .skip-link):hover,
 }
 .footer-inner .brand { color: var(--site-ink); font-size: 18px; }
 .footer-inner > p { margin: 0; line-height: 1.5; }
-.footer-inner > div { margin-left: auto; display: flex; gap: 22px; }
+.footer-contact { margin-inline-start: auto; }
 
 @media (max-width: 760px) {
   .header-inner, .footer-inner { width: calc(100% - 40px); }
   .header-inner { gap: 20px; }
   .header-inner nav { gap: 18px; }
-  .footer-inner { flex-wrap: wrap; }
-  .footer-inner > div { width: 100%; margin-left: 0; }
 }
 @media (max-width: 540px) {
   .header-inner { width: calc(100% - 32px); gap: 8px; }
@@ -150,9 +148,9 @@ a[href]:not(.app-store-badge, .skip-link):hover,
     border-radius: 12px;
   }
   .mobile-menu nav a:focus-visible { outline-offset: -3px; }
-  .footer-inner { justify-content: center; text-align: center; gap: 15px; }
+  .footer-inner { flex-wrap: wrap; justify-content: center; text-align: center; gap: 15px; }
   .footer-inner > p { width: 100%; }
-  .footer-inner > div { justify-content: center; }
+  .footer-contact { margin-inline-start: 0; }
 }
 @media (prefers-color-scheme: dark) {
   :root { --site-footer: #101012; }
